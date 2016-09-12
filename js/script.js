@@ -8,16 +8,7 @@ $(function () {
     var auotAnime = true;
     var autoAnimeSpeed = 4000;
 
-    // Show first slide and hide others as soon as document loads
-    $(slide).first().addClass("active");
-    $(slide).hide();
-    $(active).show();
-    // Previous event
-    $("#prev").on("click", previous);
-    // Next event
-    $("#next").on("click", next);
-
-// Previous event handler
+    // Previous event handler
     function previous () {
         $(active).removeClass("active").addClass("oldActive");
         if ($(oldActive).is(":first-child")) {
@@ -43,6 +34,17 @@ $(function () {
         $(active).fadeIn(animationSpeed);
     }
 
+    // Show first slide and hide others as soon as document loads
+    $(slide).first().addClass("active");
+    $(slide).hide();
+    $(active).show();
+    // Previous event
+    $("#prev").on("click", previous);
+    // Next event
+    $("#next").on("click", next);
+
+
+    // Auto animation
     if (auotAnime) {
         setInterval(function () {
             next();
