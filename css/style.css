@@ -1,0 +1,67 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+body {
+    font-family: Garamond, sans-serif;
+    font-size: 14px;
+    color: mintcream;
+    background-color: grey;
+    line-height: 1.6em;
+}
+
+#container {
+    width: 980px;
+    margin: 40px auto;
+}
+
+header h1 {
+    text-align: center;
+    margin: 20px 20px;
+}
+
+#slider {
+    width: 940px;
+    height: 390px;
+    overflow: hidden;
+    position: relative;
+    float: left;
+    border: #ff7173 solid 2px;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+#slider img {
+    width: 940px;
+    height: 390px;
+}
+
+.slide {
+    position: absolute;
+}
+
+.slide-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    width:100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#prev, #next {
+    float: left;
+    margin-top: 162px;
+    cursor: pointer;
+    position: relative;
+    z-index: 100;
+}
+/*moving prev and next icon down */
+#prev {
+    margin-right: -50px;
+}
+
+#next {
+    margin-left: -50px;
+}
