@@ -6,7 +6,7 @@ $(function () {
     var oldActive = ".oldActive";
     var animationSpeed = 500;
     var auotAnime = true;
-    var autoAnimeSpeed = 5000;
+    var autoAnimeSpeed = 4000;
 
     // Show first slide and hide others as soon as document loads
     $(slide).first().addClass("active");
